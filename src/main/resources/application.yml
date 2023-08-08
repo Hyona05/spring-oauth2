@@ -1,0 +1,28 @@
+server:
+  port: 8080
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 752155508798-8pioabj7poq3nj2r57iv55vj1f5bssge.apps.googleusercontent.com
+            client-secret: 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
+          github:
+              client-id: 9b7ccbe036a96ef59cd2
+              client-secret: 3e338017aa441a6ecf95d4b5d51fb815c02dbad2
+  datasource:
+    url: jdbc:postgresql://localhost:5432/spring_oauth
+    username: ozoda
+    password: 3846
+  jpa:
+    properties:
+     hibernate:
+       dialect: org.hibernate.dialect.PostgreSQL92Dialect
+    hibernate:
+       ddl-auto: update
+
+
+
+
+
